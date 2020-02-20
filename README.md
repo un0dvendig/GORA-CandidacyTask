@@ -1,7 +1,7 @@
 # GORA-CandidacyTask
 Отображение фотографии каждого выбранного пользователя без использования библиотек для https://jsonplaceholder.typicode.com.
 
-![First VC](https://github.com/un0dvendig/GORA-CandidacyTask/blob/master/GORA-CandidacyTask/Resources/GitHub/VC1.png) ![SecondVC](https://github.com/un0dvendig/GORA-CandidacyTask/blob/master/GORA-CandidacyTask/Resources/GitHub/VC2.png)
+<img src="https://github.com/un0dvendig/GORA-CandidacyTask/blob/master/GORA-CandidacyTask/Resources/GitHub/VC1.png" width="400"/> <img src="https://github.com/un0dvendig/GORA-CandidacyTask/blob/master/GORA-CandidacyTask/Resources/GitHub/VC2.png" width="400"/>
 
 Для экрана фотографий:
 - кэширование изображение
