@@ -100,9 +100,9 @@
 		DD4D51DC23FC65CF00482676 /* GORA-CandidacyTask */ = {
 			isa = PBXGroup;
 			children = (
-				DD34791C23FE9C1C00CE67DD /* Extensions */,
 				DD4D51FE23FC6AF100482676 /* AppDelegate */,
 				DD4D520623FC6BFD00482676 /* Constants */,
+				DD34791C23FE9C1C00CE67DD /* Extensions */,
 				DD4D51F123FC665000482676 /* Models */,
 				DD4D51FF23FC6AF900482676 /* Resources */,
 				DD4D520223FC6B2B00482676 /* Storyboards + Views */,
