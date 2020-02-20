@@ -29,7 +29,7 @@ class UserPhotosTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Photos"
+        title = ViewControllerTitle.photos.rawValue
         
         tableView?.register(UserPhotoTableViewCell.nib, forCellReuseIdentifier: UserPhotoTableViewCell.identifier)
         
@@ -64,7 +64,6 @@ class UserPhotosTableViewController: UITableViewController {
                     }
 
                     if let photos = photos {
-                        print("Got \(photos.count) photos")
                         self?.photos = photos
                     }
                 }

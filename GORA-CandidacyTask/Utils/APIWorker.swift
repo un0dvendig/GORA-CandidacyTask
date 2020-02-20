@@ -28,7 +28,6 @@ class APIWorker {
     func fetchData(from url: URL, completion: @escaping FetchDataResult) {
         dispatchQueue.async {
             [unowned self] in
-            print("Creating datatask for: \(url)")
             self.urlSession.dataTask(with: url) { (data, response, error) in
                 completion(data, response, error)
                 self.semaphore.signal()

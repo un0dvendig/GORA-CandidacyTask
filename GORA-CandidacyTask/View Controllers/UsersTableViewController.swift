@@ -27,7 +27,7 @@ class UsersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Users"
+        title = ViewControllerTitle.users.rawValue
         
         downloadAndParseUsers()
     }
@@ -56,7 +56,6 @@ class UsersTableViewController: UITableViewController {
                     }
 
                     if let users = users {
-                        print("Got \(users.count) users")
                         self?.users = users
                     }
                 }
