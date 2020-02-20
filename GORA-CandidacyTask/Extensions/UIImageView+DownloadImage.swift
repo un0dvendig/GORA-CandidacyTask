@@ -12,6 +12,7 @@ import UIKit
 let imageCache = NSCache<AnyObject, AnyObject>()
 
 extension UIImageView {
+    
     func downloadImage(from url: URL, completion: @escaping (Error?) -> Void) {
         self.image = nil
         

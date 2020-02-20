@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GORA-CandidacyTask
+
+  Created by Eugene Ilyin on 20.02.2020.
+  Copyright © 2020 Eugene Ilyin. All rights reserved.
+*/
+
+// ViewControllerTitles
+"PhotosTitle" = "Photos";
+"UsersTitle" = "Users";
+
+

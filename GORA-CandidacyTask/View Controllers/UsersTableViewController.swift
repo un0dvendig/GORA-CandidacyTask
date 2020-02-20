@@ -27,7 +27,7 @@ class UsersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = ViewControllerTitle.users.rawValue
+        title = ViewControllerTitle.users.rawValue.localized
         
         downloadAndParseUsers()
     }

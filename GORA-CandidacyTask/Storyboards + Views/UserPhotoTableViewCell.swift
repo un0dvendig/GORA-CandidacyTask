@@ -36,6 +36,12 @@ class UserPhotoTableViewCell: UITableViewCell {
     
     // MARK: - Methods
     func configure(with photo: Photo) {
+        if #available(iOS 13.0, *) {
+            photoLoadingActivityIndicator.style = .large
+        } else {
+            photoLoadingActivityIndicator.style = .gray
+        }
+        
         let userPhotoViewModel = UserPhotoViewModel(photoModel: photo)
         
         setupAdditionalBackground()

@@ -29,7 +29,7 @@ class UserPhotosTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = ViewControllerTitle.photos.rawValue
+        title = ViewControllerTitle.photos.rawValue.localized
         
         tableView?.register(UserPhotoTableViewCell.nib, forCellReuseIdentifier: UserPhotoTableViewCell.identifier)
         

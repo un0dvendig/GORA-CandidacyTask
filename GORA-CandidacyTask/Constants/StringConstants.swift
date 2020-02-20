@@ -24,6 +24,6 @@ enum APIPath: String {
 }
 
 enum ViewControllerTitle: String {
-    case users = "Users"
-    case photos = "Photos"
+    case users = "UsersTitle"
+    case photos = "PhotosTitle"
 }
