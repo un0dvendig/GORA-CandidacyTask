@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD34790E23FE841900CE67DD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34790D23FE841900CE67DD /* UsersTableViewController.swift */; };
+		DD34791323FE86BA00CE67DD /* UserPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34791123FE86BA00CE67DD /* UserPhotoTableViewCell.swift */; };
+		DD34791423FE86BA00CE67DD /* UserPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD34791223FE86BA00CE67DD /* UserPhotoTableViewCell.xib */; };
+		DD34791923FE8DF900CE67DD /* UserPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34791823FE8DF900CE67DD /* UserPhotoViewModel.swift */; };
+		DD34791B23FE95EC00CE67DD /* UserPhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34791A23FE95EC00CE67DD /* UserPhotosTableViewController.swift */; };
+		DD34791E23FE9C3700CE67DD /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34791D23FE9C3700CE67DD /* UIImageView+DownloadImage.swift */; };
 		DD4D51DE23FC65CF00482676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D51DD23FC65CF00482676 /* AppDelegate.swift */; };
-		DD4D51E223FC65CF00482676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4D51E123FC65CF00482676 /* ViewController.swift */; };
 		DD4D51E523FC65CF00482676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4D51E323FC65CF00482676 /* Main.storyboard */; };
 		DD4D51E723FC65D000482676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4D51E623FC65D000482676 /* Assets.xcassets */; };
 		DD4D51EA23FC65D000482676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4D51E823FC65D000482676 /* LaunchScreen.storyboard */; };
@@ -25,9 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD34790D23FE841900CE67DD /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		DD34791123FE86BA00CE67DD /* UserPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		DD34791223FE86BA00CE67DD /* UserPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		DD34791823FE8DF900CE67DD /* UserPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoViewModel.swift; sourceTree = "<group>"; };
+		DD34791A23FE95EC00CE67DD /* UserPhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotosTableViewController.swift; sourceTree = "<group>"; };
+		DD34791D23FE9C3700CE67DD /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		DD4D51DA23FC65CF00482676 /* GORA-CandidacyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GORA-CandidacyTask.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4D51DD23FC65CF00482676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD4D51E123FC65CF00482676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD4D51E423FC65CF00482676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD4D51E623FC65D000482676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4D51E923FC65D000482676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD34791723FE8DC500CE67DD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD34791823FE8DF900CE67DD /* UserPhotoViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		DD34791C23FE9C1C00CE67DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD34791D23FE9C3700CE67DD /* UIImageView+DownloadImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DD4D51D123FC65CF00482676 = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +100,15 @@
 		DD4D51DC23FC65CF00482676 /* GORA-CandidacyTask */ = {
 			isa = PBXGroup;
 			children = (
-				DD4D520623FC6BFD00482676 /* Constants */,
+				DD34791C23FE9C1C00CE67DD /* Extensions */,
 				DD4D51FE23FC6AF100482676 /* AppDelegate */,
+				DD4D520623FC6BFD00482676 /* Constants */,
 				DD4D51F123FC665000482676 /* Models */,
 				DD4D51FF23FC6AF900482676 /* Resources */,
-				DD4D520223FC6B2B00482676 /* Storyboards (Views) */,
+				DD4D520223FC6B2B00482676 /* Storyboards + Views */,
 				DD4D520323FC6B3400482676 /* Utils */,
 				DD4D520023FC6B1100482676 /* View Controllers */,
+				DD34791723FE8DC500CE67DD /* View Models */,
 			);
 			path = "GORA-CandidacyTask";
 			sourceTree = "<group>";
@@ -118,18 +146,21 @@
 		DD4D520023FC6B1100482676 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD4D51E123FC65CF00482676 /* ViewController.swift */,
+				DD34790D23FE841900CE67DD /* UsersTableViewController.swift */,
+				DD34791A23FE95EC00CE67DD /* UserPhotosTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		DD4D520223FC6B2B00482676 /* Storyboards (Views) */ = {
+		DD4D520223FC6B2B00482676 /* Storyboards + Views */ = {
 			isa = PBXGroup;
 			children = (
 				DD4D51E323FC65CF00482676 /* Main.storyboard */,
 				DD4D51E823FC65D000482676 /* LaunchScreen.storyboard */,
+				DD34791123FE86BA00CE67DD /* UserPhotoTableViewCell.swift */,
+				DD34791223FE86BA00CE67DD /* UserPhotoTableViewCell.xib */,
 			);
-			path = "Storyboards (Views)";
+			path = "Storyboards + Views";
 			sourceTree = "<group>";
 		};
 		DD4D520323FC6B3400482676 /* Utils */ = {
@@ -211,6 +242,7 @@
 				DD4D51EA23FC65D000482676 /* LaunchScreen.storyboard in Resources */,
 				DD4D51E723FC65D000482676 /* Assets.xcassets in Resources */,
 				DD4D51E523FC65CF00482676 /* Main.storyboard in Resources */,
+				DD34791423FE86BA00CE67DD /* UserPhotoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD34791923FE8DF900CE67DD /* UserPhotoViewModel.swift in Sources */,
+				DD34790E23FE841900CE67DD /* UsersTableViewController.swift in Sources */,
 				DD4D520C23FC71E400482676 /* APIWorker.swift in Sources */,
 				DD4D51FB23FC693200482676 /* Photo.swift in Sources */,
 				DD4D520E23FC7AAA00482676 /* JSONParser.swift in Sources */,
-				DD4D51E223FC65CF00482676 /* ViewController.swift in Sources */,
+				DD34791E23FE9C3700CE67DD /* UIImageView+DownloadImage.swift in Sources */,
 				DD4D520523FC6B8800482676 /* URLBuilder.swift in Sources */,
 				DD4D51F723FC670F00482676 /* Geolocation.swift in Sources */,
 				DD4D51F923FC683300482676 /* Company.swift in Sources */,
+				DD34791B23FE95EC00CE67DD /* UserPhotosTableViewController.swift in Sources */,
 				DD4D51DE23FC65CF00482676 /* AppDelegate.swift in Sources */,
+				DD34791323FE86BA00CE67DD /* UserPhotoTableViewCell.swift in Sources */,
 				DD4D51F523FC66D300482676 /* Address.swift in Sources */,
 				DD4D51F323FC666B00482676 /* User.swift in Sources */,
 				DD4D520823FC6C1B00482676 /* StringConstants.swift in Sources */,
