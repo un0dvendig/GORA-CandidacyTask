@@ -11,7 +11,8 @@
 
 ## TO-DO:
 - [X] Закончить оформление README
-- [ ] Вынести отдельно DataSource и Delegate всех UITableView
+- [X] Вынести отдельно DataSource всех UITableView
+- [ ] Вынести отдельно Delegate всех UITableView
 - [X] Пофиксить визуальные баги
 - [X] Переименовать классы/файлы по необходимости 
 - [X] Избавиться от всей debuginfo
@@ -21,4 +22,5 @@
 ## Known issues:
 - Проблема с constraints в landscape ориентации [*FastFix:* Disabled landscape orientation]
 - Нехватка протоколов (жёсткая зависимость от models/view models; нехватка абстракций)
-- Отсутствие модели для DataSource (возможно упрощение/уменьшение размера классов UITableViewController)
+- Отсутствие модели для DataSource (возможно упрощение/уменьшение размера классов UITableViewController) 
+**UPD: Fixed**
