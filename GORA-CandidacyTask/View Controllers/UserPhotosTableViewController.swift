@@ -15,12 +15,11 @@ class UserPhotosTableViewController: UITableViewController {
     
     private let apiWorker = APIWorker.shared
     private let jsonParser = JSONParser.shared
-    private var photos: [Photo]? {
+    private var dataSource: PhotosListDataSource! {
         didSet {
             DispatchQueue.main.async {
-                if self.isViewLoaded {
-                    self.tableView.reloadData()
-                }
+                self.tableView.dataSource = self.dataSource
+                self.tableView.reloadData()
             }
         }
     }
@@ -64,33 +63,10 @@ class UserPhotosTableViewController: UITableViewController {
                     }
 
                     if let photos = photos {
-                        self?.photos = photos
+                        self?.dataSource = PhotosListDataSource(photos: photos)
                     }
                 }
             }
         }
     }
-
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photos?.count ?? 0
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserPhotoTableViewCell.identifier, for: indexPath) as? UserPhotoTableViewCell else {
-            fatalError("The dequeued cell is not an instance of UserPhotoTableViewCell.")
-        }
-        
-        if let photo = photos?[indexPath.row] {
-            cell.configure(with: photo)
-        }
-        
-        return cell
-    }
-
 }

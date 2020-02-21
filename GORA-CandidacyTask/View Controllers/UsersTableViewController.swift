@@ -13,12 +13,11 @@ class UsersTableViewController: UITableViewController {
     // MARK: - Properties
     private let apiWorker = APIWorker.shared
     private let jsonParser = JSONParser.shared
-    private var users:[User]? {
+    private var dataSource: UsersListDataSource! {
         didSet {
             DispatchQueue.main.async {
-                if self.isViewLoaded {
-                    self.tableView.reloadData()
-                }
+                self.tableView.dataSource = self.dataSource
+                self.tableView.reloadData()
             }
         }
     }
@@ -56,35 +55,14 @@ class UsersTableViewController: UITableViewController {
                     }
 
                     if let users = users {
-                        self?.users = users
+                        self?.dataSource = UsersListDataSource(users: users)
                     }
                 }
             }
         }
     }
 
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users?.count ?? 0
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
-        
-        guard let users = users else { return cell }
-        let user = users[indexPath.row]
-        
-        DispatchQueue.main.async {
-            cell.textLabel?.text = user.name
-        }
-        
-        return cell
-    }
-    
+    // MARK: - UITableViewDelegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -94,7 +72,8 @@ class UsersTableViewController: UITableViewController {
         if segue.identifier == "ShowUserPhotosSegue" {
             if let destinationVC = segue.destination as? UserPhotosTableViewController {
                 guard let indexPath = self.tableView.indexPathForSelectedRow else { return }
-                destinationVC.userId = users?[indexPath.row].id
+                
+                destinationVC.userId = dataSource.users[indexPath.row].id
             }
         }
     }

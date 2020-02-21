@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD17B76A24007FE200C5E72B /* UsersListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17B76924007FE200C5E72B /* UsersListDataSource.swift */; };
+		DD17B76C2400853C00C5E72B /* PhotosListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD17B76B2400853C00C5E72B /* PhotosListDataSource.swift */; };
 		DD34790E23FE841900CE67DD /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34790D23FE841900CE67DD /* UsersTableViewController.swift */; };
 		DD34791323FE86BA00CE67DD /* UserPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34791123FE86BA00CE67DD /* UserPhotoTableViewCell.swift */; };
 		DD34791423FE86BA00CE67DD /* UserPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD34791223FE86BA00CE67DD /* UserPhotoTableViewCell.xib */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD17B76924007FE200C5E72B /* UsersListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListDataSource.swift; sourceTree = "<group>"; };
+		DD17B76B2400853C00C5E72B /* PhotosListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListDataSource.swift; sourceTree = "<group>"; };
 		DD34790D23FE841900CE67DD /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		DD34791123FE86BA00CE67DD /* UserPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		DD34791223FE86BA00CE67DD /* UserPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPhotoTableViewCell.xib; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				DD4D520B23FC71E400482676 /* APIWorker.swift */,
 				DD4D520423FC6B8800482676 /* URLBuilder.swift */,
 				DD4D520D23FC7AAA00482676 /* JSONParser.swift */,
+				DD17B76924007FE200C5E72B /* UsersListDataSource.swift */,
+				DD17B76B2400853C00C5E72B /* PhotosListDataSource.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -291,7 +297,9 @@
 				DD4D51DE23FC65CF00482676 /* AppDelegate.swift in Sources */,
 				DD34792B23FF2C0F00CE67DD /* String+Localized.swift in Sources */,
 				DD34791323FE86BA00CE67DD /* UserPhotoTableViewCell.swift in Sources */,
+				DD17B76A24007FE200C5E72B /* UsersListDataSource.swift in Sources */,
 				DD4D51F523FC66D300482676 /* Address.swift in Sources */,
+				DD17B76C2400853C00C5E72B /* PhotosListDataSource.swift in Sources */,
 				DD4D51F323FC666B00482676 /* User.swift in Sources */,
 				DD4D520823FC6C1B00482676 /* StringConstants.swift in Sources */,
 				DD4D51FD23FC6A8A00482676 /* Album.swift in Sources */,
